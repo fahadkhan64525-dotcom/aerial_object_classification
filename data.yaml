@@ -1,0 +1,8 @@
+path: C:\Users\moham\OneDrive\Desktop\object
+train: images/train
+val: images/valid
+test: images/test
+nc: 2
+names:
+- bird
+- drone
