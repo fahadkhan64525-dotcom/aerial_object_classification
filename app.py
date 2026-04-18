@@ -14,7 +14,8 @@ Features:
   - Optional YOLOv8 object detection with bounding boxes
   - Model comparison metrics dashboard
 """
-
+import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 import gdown, os
 #MODEL_URL = "https://drive.google.com/file/d/1CMtWIDa2GZ1f2A9kZ7MXs6PlpPEJ5RiM/view?usp=sharing"
 #if not os.path.exists("models/best_model.keras"):
