@@ -22,13 +22,14 @@ import gdown, os
   #  gdown.download(MODEL_URL, "models/best_model.keras", quiet=False)
 
 
-MODEL_PATH = "models/best_model.keras"
+import gdown
+
+MODEL_PATH = "models/custom_cnn_best.keras"
 
 if not os.path.exists(MODEL_PATH):
     os.makedirs("models", exist_ok=True)
-    FILE_ID = "1CMtWIDa2GZ1f2A9kZ7MXs6PlpPEJ5RiM"  # ← sirf ID daalo
     gdown.download(
-        f"https://drive.google.com/uc?id={FILE_ID}",
+        "https://drive.google.com/uc?id=1CMtWIDa2GZ1f2A9kZ7MXs6PlpPEJ5RiM",
         MODEL_PATH,
         quiet=False
     )
