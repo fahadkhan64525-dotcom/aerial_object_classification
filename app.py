@@ -20,15 +20,15 @@ import gdown, os
 #if not os.path.exists("models/best_model.keras"):
  #   os.makedirs("models", exist_ok=True)
   #  gdown.download(MODEL_URL, "models/best_model.keras", quiet=False)
-import gdown
+
 
 MODEL_PATH = "models/best_model.keras"
 
 if not os.path.exists(MODEL_PATH):
     os.makedirs("models", exist_ok=True)
-    FILE_ID = "YAHAN_APNA_FILE_ID_LIKHO"  # ← sirf ID daalo
+    FILE_ID = "1CMtWIDa2GZ1f2A9kZ7MXs6PlpPEJ5RiM"  # ← sirf ID daalo
     gdown.download(
-        f"https://drive.google.com/uc?id={1CMtWIDa2GZ1f2A9kZ7MXs6PlpPEJ5RiM}",
+        f"https://drive.google.com/uc?id={FILE_ID}",
         MODEL_PATH,
         quiet=False
     )
