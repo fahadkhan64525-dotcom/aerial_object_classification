@@ -15,11 +15,23 @@ Features:
   - Model comparison metrics dashboard
 """
 
-import gdown, os
-MODEL_URL = "https://drive.google.com/drive/folders/1DKYzu0tYoDVOkQD8KexmJPFXH1SKhB8v?usp=sharing"
-if not os.path.exists("models/best_model.keras"):
+#import gdown, os
+#MODEL_URL = "https://drive.google.com/file/d/1CMtWIDa2GZ1f2A9kZ7MXs6PlpPEJ5RiM/view?usp=sharing"
+#if not os.path.exists("models/best_model.keras"):
+ #   os.makedirs("models", exist_ok=True)
+  #  gdown.download(MODEL_URL, "models/best_model.keras", quiet=False)
+import gdown
+
+MODEL_PATH = "models/best_model.keras"
+
+if not os.path.exists(MODEL_PATH):
     os.makedirs("models", exist_ok=True)
-    gdown.download(MODEL_URL, "models/best_model.keras", quiet=False)
+    FILE_ID = "YAHAN_APNA_FILE_ID_LIKHO"  # ← sirf ID daalo
+    gdown.download(
+        f"https://drive.google.com/uc?id={1CMtWIDa2GZ1f2A9kZ7MXs6PlpPEJ5RiM}",
+        MODEL_PATH,
+        quiet=False
+    )
 import sys
 import json
 import glob
