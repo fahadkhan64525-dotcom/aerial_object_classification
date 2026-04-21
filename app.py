@@ -207,7 +207,7 @@ CLASSES      = ["bird", "drone"]
 IMG_SIZE     = (224, 224)
 MODELS_DIR   = str(ROOT / "models")
 HISTORY_DIR  = str(ROOT / "models")
-YOLO_WEIGHTS_PATH = r"C:\Users\moham\OneDrive\Desktop\aerial_object_classification\yolov8n.pt"
+YOLO_WEIGHTS_PATH = None#r"C:\Users\moham\OneDrive\Desktop\aerial_object_classification\yolov8n.pt"
 
 CLASS_EMOJI  = {"bird": "🐦", "drone": "🚁"}
 CLASS_INFO   = {
