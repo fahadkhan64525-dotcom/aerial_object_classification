@@ -10,4 +10,4 @@ pyyaml
 tqdm
 plotly
 gdown
-tensorflow-cpu
+
