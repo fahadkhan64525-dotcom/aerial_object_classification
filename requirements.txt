@@ -9,6 +9,6 @@ pandas
 pyyaml
 tqdm
 plotly
-tensorflow
+tensorflow-cp==2.12.0
 gdown
 
